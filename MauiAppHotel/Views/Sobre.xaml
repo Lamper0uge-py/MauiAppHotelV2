@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Black}">
+
+    <VerticalStackLayout
+        VerticalOptions="Center"
+        HorizontalOptions="Center"
+        Padding="30"
+        Spacing="20">
+
+        <Label Text="Sobre o Aplicativo"
+               FontSize="32"
+               FontAttributes="Bold"
+               TextColor="{StaticResource PrimaryDarkText}"
+               HorizontalTextAlignment="Center" />
+
+        <Label Text="Sistema de Contratação de Hospedagem"
+               FontSize="20"
+               HorizontalTextAlignment="Center" />
+
+        <BoxView HeightRequest="2"
+                 Color="{StaticResource PrimaryDarkText}" />
+
+        <Label Text="Informações do Desenvolvedor"
+               FontSize="21"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center" />
+
+        <Label Text="Desenvolvedor: Rodrigo Ferreira"
+               FontSize="18"
+               HorizontalTextAlignment="Center" />
+
+        <Label Text="Ano de desenvolvimento: 2026"
+               FontSize="18"
+               HorizontalTextAlignment="Center" />
+
+        <Label Text="Aplicativo desenvolvido utilizando .NET MAUI."
+               FontSize="14"
+               HorizontalTextAlignment="Center" />
+
+        <Button Text="Voltar"
+                BackgroundColor="{StaticResource PrimaryDarkText}"
+                TextColor="Gray"
+                Clicked="btn_voltar_Clicked" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

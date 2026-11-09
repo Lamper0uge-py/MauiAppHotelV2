@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.ContatoSuporte"
+             Title="ContatoSuporte"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource OffBlack}">
+
+    <ScrollView>
+        <VerticalStackLayout VerticalOptions="Center"
+                             Padding="15"
+                             Spacing="15">
+
+            <Label Text="Contato e Suporte"
+                   FontFamily="LancelotRegular"
+                   FontSize="45"
+                   TextColor="{StaticResource AntiqueGold}"
+                   HorizontalOptions="Center" />
+
+            <Label Text="Como podemos ajudar?"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   TextColor="{StaticResource GothicSilver}"
+                   HorizontalOptions="Center" />
+
+            <Frame Padding="15"
+                   BackgroundColor="{StaticResource Charcoal}">
+
+                <VerticalStackLayout Spacing="15">
+
+                    <Label Text="Entre em contato conosco:"
+                           FontSize="17"
+                           FontAttributes="Bold"
+                           TextColor="{StaticResource AntiqueGold}" />
+
+                    <!-- E-mail -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="E-mail"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="{StaticResource AntiqueGold}" />
+
+                        <Label Text="suporte@meuhotel.com"
+                               FontSize="16"
+                               TextColor="White" />
+                    </VerticalStackLayout>
+
+                    <!-- Telefone -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Telefone"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="{StaticResource AntiqueGold}" />
+
+                        <Label Text="(00) 0000-0000"
+                               FontSize="16"
+                               TextColor="White" />
+                    </VerticalStackLayout>
+
+                    <!-- Endereço -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Endereço"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="{StaticResource AntiqueGold}" />
+
+                        <Label Text="Rua Exemplo, 123 - Centro"
+                               FontSize="16"
+                               TextColor="White" />
+                    </VerticalStackLayout>
+
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame Padding="15"
+                   BackgroundColor="{StaticResource Charcoal}">
+
+                <VerticalStackLayout Spacing="10">
+
+                    <Label Text="Dúvidas Frequentes"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="{StaticResource AntiqueGold}" />
+
+                    <Label Text="Como faço para contratar uma hospedagem?"
+                           FontAttributes="Bold"
+                           TextColor="White" />
+
+                    <Label Text="Acesse a tela de contratação e escolha sua acomodação e período de estadia."
+                           TextColor="{StaticResource GothicSilver}" />
+
+                    <Label Text="Como consultar minha hospedagem?"
+                           FontAttributes="Bold"
+                           TextColor="White" />
+
+                    <Label Text="Acesse a tela de hospedagem contratada para visualizar os dados da sua reserva."
+                           TextColor="{StaticResource GothicSilver}" />
+
+                    <Label Text="Como posso tirar outras dúvidas?"
+                           FontAttributes="Bold"
+                           TextColor="White" />
+
+                    <Label Text="Entre em contato conosco através do e-mail ou telefone informados acima."
+                           TextColor="{StaticResource GothicSilver}" />
+
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button Text="Voltar"
+                    Clicked="btn_voltar_Clicked"
+                    FontSize="15"
+                    FontAttributes="Bold"
+                    Margin="15"
+                    TextColor="{StaticResource AntiqueGold}"
+                    BackgroundColor="{StaticResource DarkWine}" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
